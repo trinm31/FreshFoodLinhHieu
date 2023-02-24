@@ -1,3 +1,93 @@
+:root {
+  --primary-color: #0f9d58;
+  --background-color: #f0f3f7;
+  --second-color: #9da2ad;
+  --grey: #7a7a7a;
+  --white: #ffffff;
+}
+
 * {
   font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+body,
+html {
+  background-color: var(--background-color);
+  scroll-behavior: smooth;
+  position: relative;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+.nav {
+  padding: 16px;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--background-color);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.menu-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.menu-item {
+  margin-left: 16px;
+  color: var(--grey);
+  font-weight: 600;
+  padding: 8px 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.menu-item:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 16px;
+}
+
+.menu .active {
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 16px;
+}
+
+.cart-btn {
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.cart-btn:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 10px;
 }
