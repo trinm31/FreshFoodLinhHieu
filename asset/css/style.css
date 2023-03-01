@@ -91,3 +91,83 @@ html {
   background-color: var(--primary-color);
   border-radius: 10px;
 }
+
+.fullheight {
+  height: 100vh;
+}
+
+.bg-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-img-fixed {
+  background-attachment: fixed;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.slogan {
+  text-align: left;
+}
+
+.slogan h1 {
+  font-size: 100px;
+  color: var(--primary-color);
+}
+
+.slogan p {
+  font-weight: 800;
+}
+
+.slogan button {
+  padding: 16px 80px;
+  border: none;
+  outline: none;
+  background-color: var(--background-color);
+  border: 2.5px solid var(--primary-color);
+  border-radius: 30px;
+  color: var(--primary-color);
+  font-weight: 800;
+  margin: 40px 0;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.slogan button:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+#about img {
+  border-radius: 32px;
+  box-shadow: rgba(98, 99, 99, 0.3) 0px 8px 24px;
+}
+
+.about-slogan {
+  padding: 50px;
+  background-color: var(--white);
+  border-radius: 30px;
+  box-shadow: rgba(98, 99, 99, 0.3) 0px 8px 24px;
+  transform: translateX(-120px);
+}
+
+.about-slogan h3 {
+  font-size: 27px;
+  color: var(--grey);
+  margin-bottom: 20px;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
